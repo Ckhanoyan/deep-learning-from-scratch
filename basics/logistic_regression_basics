@@ -30,3 +30,19 @@ Weighted sum... calculate z = w.T + b
 Prediction (probability) is the ability to apply the sigmoid function to z, resulting in a probability Y^ between 0 and 1 
 
 Decision: if Y^ > 0.5, then it will be rounded up to 1 and classify the email as spam. Otherwise, it will classify as 0 and not spam. 
+
+4. Code example: 
+
+import numpy as np
+
+def sigmoid(z):
+    return 1 / (1 + np.exp(-z))
+
+# Example data
+w = np.array([0.5, 1.0, -0.5])
+X = np.array([1.0, 0.0, 1.0])
+b = 0.2
+
+z = np.dot(w, X) + b
+A = sigmoid(z)
+print("Probability:", A)
