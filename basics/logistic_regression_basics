@@ -1,3 +1,9 @@
-## what is a logstic regression model?
+# What is a logistic regression?
 
 Logistic regression is a statistical model that predicts probabilities. It is commonly used for binary classification problems, where the output is either 0 or 1. 
+
+We compute the weighted sum of inputs and a bias like this below:
+z = w.T * X + b
+
+Then we apply the sigmoid function to z:
+A = 1 / (1 + np.exp(-z))
