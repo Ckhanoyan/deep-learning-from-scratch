@@ -8,7 +8,8 @@ z = w.T * X + b
 Then we apply the sigmoid function to z:
 A = 1 / (1 + np.exp(-z))
 
-Real World Example: Email Spam Classification 
+**Real World Example: Email Spam Classification** 
+
 What if you want to design a system to automatically classify emails as either "spam" (1) or "not spam" (0)? How will we determine what the X is? 
 
 1. Consider input features, including numerical representations of email characteristics
