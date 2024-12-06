@@ -1,6 +1,6 @@
-## What is a Neural Network (in plain English)? I am asking myself this question too. 
+# What is a Neural Network (in plain English)? 
 
-A neural network is a simple computer system that learns from data just like how we use our human brain (do not worry that my brain takes forever to learn this stuff, and I may have to go through numerous iterations to master my skills!)
+I am asking myself this question too. A neural network is a simple computer system that learns from data just like how we use our human brain (do not worry that my brain takes forever to learn this stuff, and I may have to go through numerous iterations to master my skills!)
 
 Look at it as a collected layers of "neurons" or tiny computing units that pass information to each other and find solutions.
 
