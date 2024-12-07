@@ -45,3 +45,21 @@ Data you have below:
 Using these above, you predict the price as 
 
 Y = W * X + B
+
+### Example
+
+For a house you like with 3 bedrooms, 2 bathrooms, and 1500 sq ft in Washington, Seattle, compute the price: 
+
+Step 1) import numpy as np
+
+Step 2) Features: [Bedrooms, Bathrooms, Size (in 1000 sq ft)]
+
+X = np.array([3, 2, 1.5])
+
+Step 3) Weights: [Price per bedroom, Price per bathroom, Price per 1000 sq ft]
+
+W = np.array([25000, 10000, 200000])
+
+Step 4) Bias: Base Price 
+
+B = 100000
