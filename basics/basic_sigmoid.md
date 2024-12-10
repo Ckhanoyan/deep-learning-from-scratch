@@ -4,7 +4,7 @@ The sigmoid function is a mathematical function often used in deep learning (act
 
 Formula looks like below: 
 
-    σ(x)= 1 / (1 + e−x1)
+    σ(x)= 1 / (1 + np.exp(-x))
 
 Where e is the base of the natural logarithm (= 2.718), and x is the input value (any numbers).
 ​
@@ -27,3 +27,61 @@ An output of 0.8 means an 80% probability of approving the insurance application
 An output of 3.0 means a 30% probability of approving it. 
 
 The decision threshold, e.g., 0.5, is set. so if probability > 0.5, approve the application. If probability < .5, reject the application. 
+
+### Simple Example in Python for Health Insurance Approval Prediction 
+
+This code includes some synthetic data using NumPy as a basic example (based on my learning...) 
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+    
+    # Define the sigmoid function
+    def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+    
+    # Sample input data representing applicant features
+    # Let's assume:
+    # - Age
+    # - BMI (Body Mass Index)
+    # - Smoking status (0 = non-smoker, 1 = smoker)
+    
+    # Let's create some sample applicants
+    # [Age, BMI, Smoking Status]
+    applicants = np.array([
+        [25, 22, 0],  # Young, healthy, non-smoker
+        [40, 28, 0],  # Middle-aged, average BMI, non-smoker
+        [30, 30, 1],  # Young, overweight, smoker
+        [55, 32, 1],  # Older, high BMI, smoker
+        [22, 20, 0],  # Very young, low BMI, non-smoker
+    ])
+    
+    # Define weights for the model (simplified)
+    # These would usually be determined during training in a real-world model
+    weights = np.array([0.05, 0.03, -0.5])  # Small positive weights
+    
+    # Calculate a simple dot product (linear combination of features and weights)
+    logits = np.dot(applicants, weights)
+    
+    # Apply the sigmoid function to get approval probabilities
+    approval_prob = sigmoid(logits)
+    
+    # Print the approval probabilities
+    print("Approval probabilities:", approval_prob)
+    
+    # Plot probabilities
+    plt.bar(range(len(approval_prob)), approval_prob, color="skyblue")
+    plt.title("Health Insurance Approval Probabilities")
+    plt.xlabel("Applicant")
+    plt.ylabel("Probability of Approval")
+    plt.show()
+
+How did we determine these weights? In this demonstration, arbitrary weights were selected to simulate a simple relationship:
+* These weights represent the influence of each feature on approval decisions.
+* Small positive weights (0.05 and 0.03) simulate positive influences on approval.
+* The negative weight (-0.5) for smoking suggests that smoking negatively impacts insurance approval, as smokers are often considered higher-risk applicants.
+
+What is the purpose of logits = np.dot(applicants, weights)?
+* This line is calcualating the weighted sum of input features.
+* Each row of an applicant has 3 values (age, BMI, smoking status) like Column 0, Column 1, Column 2
+* Weights is a 1-dimensional array representing the importance of each input feature
+* What does np.dot do??? The dot product of two matrices multiplies each row in applicants with the weights array element-wise and sums up the results of each applicant
