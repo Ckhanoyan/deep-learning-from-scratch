@@ -84,4 +84,12 @@ What is the purpose of logits = np.dot(applicants, weights)?
 * This line is calcualating the weighted sum of input features.
 * Each row of an applicant has 3 values (age, BMI, smoking status) like Column 0, Column 1, Column 2
 * Weights is a 1-dimensional array representing the importance of each input feature
-* What does np.dot do??? The dot product of two matrices multiplies each row in applicants with the weights array element-wise and sums up the results of each applicant
+* What does np.dot do??? The dot product of two matrices multiplies each row in applicants with the weights array element-wise and sums up the results of each 
+
+
+![image](https://github.com/user-attachments/assets/177edda5-9ec0-47e9-86d5-5385cd9601f5)
+
+
+![image](https://github.com/user-attachments/assets/8e238f72-b978-44ae-8729-4736fe741955)
+
+
