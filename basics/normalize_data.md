@@ -53,8 +53,9 @@ How do we want to bring age, income, and dependents to (0-1)? Try this code I ju
     normalized_df.to_csv("normalized_health_insurance_data.csv", index=False)
 
     
+Then, we get this. 
 
-
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/60e4d466-f588-4d34-ae3e-5b9407937725" />
 
 
     
