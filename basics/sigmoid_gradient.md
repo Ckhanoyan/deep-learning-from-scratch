@@ -6,6 +6,10 @@ Why is gradient important for health insurance? In health insurance, decisions a
 * Handling complexity, e.g., handling large datasets with many factors
 * Adaptability
 
+## First, What is the Gradient "Bowl"?
+
+Imagine you are standing on a large, smooth hill shapred like a bowl. At the very bottom of the bowl, that is your treasure chest that represents the best solution to a problem such as the most accurate model for predicting health insurance approval. Your goal is to reach the treasure by walking downhill, and I know that sounds weird. So, the surface of the bowl represents the loss function or how bad your current solution is. Your current position (weights) determines how high or low you are on the bowl. Therefore, each step you take downhill is guided by the GRADIENT, which tells you which direction is steepest. In the other words, as you continue stepping downhill, you are gradually adjusting your weights and making better predictions, including reducing the loss. 
+
 We would use it during backpropagation for logistic regression. Remember the sigmoid function below: 
 
     σ(x)= 1 / (1 + np/exp(-x))
