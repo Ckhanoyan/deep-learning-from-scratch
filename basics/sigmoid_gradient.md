@@ -10,4 +10,13 @@ Here is the gradient of sigmoid function, which this formula leverages the prope
 
 Compute the gradient for each input so if we want to find Ypred (Y prediction) coming from (z = Xw + b, the weighted input: 
 
-    σ′(z) = Ypred * (1 - Ypred) 
+    σ′(z) = y_pred * (1 - y_pred) 
+
+If we are calculating gradients for logistic regression, we should calculate the gradient of the loss function as well. 
+
+    Loss = -(1/N) * Σ [y_i * log(y_pred) + (1 - y_i) * log(1 - y_pred)]
+
+With above, you will find Error from this formula:
+
+    error = y_pred - y_true
+
