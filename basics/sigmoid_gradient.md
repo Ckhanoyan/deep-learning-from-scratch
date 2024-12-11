@@ -1,5 +1,11 @@
 # Calculate the Gradient for the Sigmoid Function Using Health Insurance Approval Prediction 
 
+Why is gradient important for health insurance? In health insurance, decisions are often complex, involving multiple factors like age, income, health history, etc. The gradient plays a role in automating and improving decisions by:
+* Optiminzing predictions, e.g., how much BMI matters compared to age
+* Reducing human bias
+* Handling complexity, e.g., handling large datasets with many factors
+* Adaptability
+
 We would use it during backpropagation for logistic regression. Remember the sigmoid function below: 
 
     σ(x)= 1 / (1 + np/exp(-x))
@@ -90,3 +96,14 @@ With above, you will find Error from this formula:
     # Print results
     print("Final weights:", final_weights)
     print("Final probabilities:", final_probabilities)
+
+### Key Notes from the Code Above 
+
+* Age and BMI are adjusted to ensure they are on the same scale, making the model learn more effectively
+* Adding a Bias Term is a constant value that helps the model account for a baseline approval rate
+* Initializing weights is important because the model starts with random numbers (weights) to figure out the relationship between age, BMI, and approval
+* The model multiples age and BMI with their respective weights and adds the bias
+* The result is passed through a sigmoid function, which converts the numbers into probabilities like "This guy has a 70% chance of approval"
+* To measure error (loss), the binary cross-entropy loss tells us how far off the model's predictions are from the true approval labels (lower loss = better predictions)
+* To calculate the gradient, we need to measure how much each weight contributes to the error, e.g., the age weight causing high error so the gradient for age will be large and it needs to be adjusted
+* To update the weights, the model updates the weights step by step to reduce error, and it is called gradient descent to ensure the model learns the best weights to make accurate predictions
