@@ -6,7 +6,19 @@ It is a technique in programming where operations are performed on entire arrays
 
 ### Real Life Analogy 
 
-You are probably trying to connect the dots just like me. Think of it like we are preparing a batch of meals all at once vs. cooking each one by one. Bingo? No? 
+You are probably trying to connect the dots just like me. Think of it like we are preparing a batch of meals all at once vs. cooking each one by one. Bingo? No? How about this below?
+
+Laundry vs. Washing Each Item... 
+* Non-vectorized: we may be washing clothes one by one in a bucket. You dunk each shirt, scrub it, rinse it, and move on to the next shirt
+* Vectorized: Putting all clothes into a washing machine, and it washes everything at once.
+
+How about making sandwiches? 
+* Non-vectorized: you make one sandwich at a time... slice the bread, spread the butter, add fillings, and close it...
+* Vectorized: Lay out all the bread slices, spread butter on all of them at once, then add fillings to all of them in a single step
+
+Ok, last one... a bit of humor so we can all say BINGO
+* Non-vectorized: you pour batter into the pan, cook one pancake, flip it, wait, and then repeat for the next pancake. Everybody is hungry at iHOP!
+* Vectorized: you whip out a giant griddle and pour batter for 10 pancakes at once. Flip them all in one go. Like a pancake ninja. No one is hangry. 
 
 ## Non-Vectorized Example Using Loops 
 
