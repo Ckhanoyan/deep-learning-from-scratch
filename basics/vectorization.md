@@ -4,6 +4,10 @@
 
 It is a technique in programming where operations are performed on entire arrays or vectors of data, rather than using loops to process individual elements. I was asked to compare both non-vectorized example and vectorized example so here is what I learned. 
 
+### Real Life Analogy 
+
+You are probably trying to connect the dots just like me. Think of it like we are preparing a batch of meals all at once vs. cooking each one by one. Bingo? No? 
+
 ## Non-Vectorized Example Using Loops 
 
 We are not using numpy but only import math. 
