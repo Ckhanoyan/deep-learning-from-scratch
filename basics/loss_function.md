@@ -6,11 +6,10 @@ A loss function is important to be used in evaluating the performance of your mo
 
 How do we use a loss function to evaluate this health insurance approval prediction model? We need to consider all inputs (income, age, etc.), output (probability of approval), and targets (1 for approval and 0 for denied). So, if the model predicts probabilities, we might need to use cross-entropy loss for classification. 
 
-What does the loss function look like in both formula and code? 
+What does the loss function look like in both formula and code?
 
-The formula looks like this below: 
+The formula looks like this in code below: 
 
-    Cross-Entropy Loss:
     L = - (1/N) ∑ [y_i * log(p_i) + (1 - y_i) * log(1 - p_i)]
 
 Where:
@@ -38,3 +37,9 @@ Where:
     # Calculate and print the loss
     loss = cross_entropy_loss(predictions, labels)
     print(f"Cross-Entropy Loss: {loss:.4f}")
+
+The result we will get from the code above is:
+
+    Cross-Entropy Loss: 0.2162
+
+The cross-entropy loss for the provided predictions and labels is approximately 0.2990. To interpret this result, this indicates how well the model's predicted probabilities match the actual labels. Lower values signify better performance. 
