@@ -43,3 +43,9 @@ The result we will get from the code above is:
     Cross-Entropy Loss: 0.2162
 
 The cross-entropy loss for the provided predictions and labels is approximately 0.2990. To interpret this result, this indicates how well the model's predicted probabilities match the actual labels. Lower values signify better performance. 
+
+### Bar Plot 
+
+![image](https://github.com/user-attachments/assets/48498b72-df09-4e7b-b764-d73fa695c558)
+
+This bar plot shows the individual cross-entropy loss for each sample in the dataset. The dashed red line represents the mean loss across all samples, which is the overall cross-entropy loss. This visualization also helps to understand how each prediction contributes to the total loss. 
