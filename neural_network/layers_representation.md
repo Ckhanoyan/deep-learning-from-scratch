@@ -5,3 +5,4 @@ Think of a simple diagram representing a neural network using nodes and connecti
 * Hidden layer: 4 nodes such as h1, h2, h3, h4
 * Output layer: 1 node representing the final prediction y 
 
+![image](https://github.com/user-attachments/assets/d2b3fc9c-afbb-46b6-9dee-0e7eb9906f1e)
