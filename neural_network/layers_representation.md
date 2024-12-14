@@ -13,3 +13,5 @@ Please understand that the hidden layer only has ONE single layer made of 4 neur
 
 
 https://becominghuman.ai/understanding-the-structure-of-neural-networks-1fa5bd17fef0
+
+https://www.youtube.com/watch?v=bxe2T-V8XRs
