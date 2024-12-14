@@ -21,4 +21,16 @@ For Y,
 * Average zone 2 power
 
       X = np.array(([5,2], [6,1], [8,3]), dtype=float)
-      Y = np.array(([175], [195], [240]). dtype=float)
+      Y = np.array(([175], [195], [240]), dtype=float)
+
+For X output, we get this below:
+
+      [[5.  2. ]
+       [6.  1. ]
+       [8.  3. ]]
+
+For Y output, we get this below:
+
+      [[175.]
+       [195.]
+       [240.]]
