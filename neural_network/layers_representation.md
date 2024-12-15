@@ -81,14 +81,26 @@ Y output:
       [0.609]
       [0.75]
 
-I hope this example above helps you and also myself understand how to normalize both X and Y in simple step by step. Here's the python implementation to normalize X and Y:
+I hope this example above helps you and also myself understand how to normalize both X and Y in simple step by step. Here's the implementation code for this simple neural network:
 
-      # Normalize X
-      X_max = np.max(X, axis=0)  # Find the max of each column
-      X_scaled = X / X_max       # Scale X to [0, 1]
+      import numpy as np 
 
-      # Normalize Y
-      Y_max = 320.0              # Maximum possible value for Y
-      Y_scaled = Y / Y_max       # Scale Y to [0, 1]
+      # Step 1: Initiatize parameters 
+      def initiatlize_parameters(input_size, hidden_size, output_size):
+            np.random.seed(42)                                           # see information about np.random.seed in the basics folder
+            W1 = np.random.randn(input_size, hidden_size) * 0.01         # input to hidden
+            b1 = np.zeros((1, hidden_size))                              # bias for hidden
+            W2 = np.random.randn(hidden_size, output_size) * 0.01        # hidden to output 
+            b2 = np.zeros((1, output_size))                              # Bias for output
+            return W1, b1, W2, b2 
+
+      # Step 2: Forward propagation 
+      def forward_propagation(X, W1, b1, W2, b2): 
+            Z1 = np.dot(X, W1) + b1                                      # Linear step for hidden layer 
+            A1 = np.maxium(0, Z1)                                        # ReLU activiation 
+            Z2 = np.dot(A1, w2) + b2                                     # Linear step for output 
+            return Z1, A1, Z2
+      
+
 
 
