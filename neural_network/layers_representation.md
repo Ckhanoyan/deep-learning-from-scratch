@@ -65,6 +65,8 @@ We get the X normalized output below:
       [0.75   0.333]
       [1      1]
 
+### Normalize Y
+
 Then, we do the same thing for Y, and the max Y value is 320. 
 
       [175]
@@ -78,5 +80,15 @@ Y output:
       [0.547]
       [0.609]
       [0.75]
+
+I hope this example above helps you and also myself understand how to normalize both X and Y in simple step by step. Here's the python implementation to normalize X and Y:
+
+      # Normalize X
+      X_max = np.max(X, axis=0)  # Find the max of each column
+      X_scaled = X / X_max       # Scale X to [0, 1]
+
+      # Normalize Y
+      Y_max = 320.0              # Maximum possible value for Y
+      Y_scaled = Y / Y_max       # Scale Y to [0, 1]
 
 
