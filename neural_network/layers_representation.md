@@ -64,3 +64,19 @@ We get the X normalized output below:
       [0.625  0.667]
       [0.75   0.333]
       [1      1]
+
+Then, we do the same thing for Y, and the max Y value is 320. 
+
+      [175]
+      [195]
+      [240]
+      /
+      [320]
+
+Y output:
+
+      [0.547]
+      [0.609]
+      [0.75]
+
+
