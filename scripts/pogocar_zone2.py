@@ -63,3 +63,20 @@ def train(X, Y, hidden_size, learning_rate, epochs):
 def predict(X, W1, b1, W2, b2):
     _, _, Z2 = forward_propagation(X, W1, b1, W2, b2)
     return Z2
+
+# Train the model
+
+# Training data (already normalized)
+X_scaled = np.array([[0.625, 0.667], [0.75, 0.333], [1.0, 1.0]])
+Y_scaled = np.array([[0.547], [0.609], [0.75]])
+
+# Train
+W1, b1, W2, b2 = train(X_scaled, Y_scaled, hidden_size=4, learning_rate=0.01, epochs=1000)
+
+# Test with a random input 
+
+random_input = np.array([[4, 3]]) / np.array([[8, 3]])  # Normalize
+predicted_scaled = predict(random_input, W1, b1, W2, b2)
+predicted = predicted_scaled * 320  # Scale back to original range
+print("Predicted zone 2 power:", predicted)
+
