@@ -17,16 +17,29 @@ https://becominghuman.ai/understanding-the-structure-of-neural-networks-1fa5bd17
 
 I just learned that I can use mermaid to create a diagram in this platform without using an external platform! Here's the cool stuff here below. 
 
+
 ```mermaid
 graph LR
-    A[Input Layer: x1, x2, x3] --> B1[Hidden Node 1]
-    A --> B2[Hidden Node 2]
-    A --> B3[Hidden Node 3]
-    A --> B4[Hidden Node 4]
-    B1 --> C[Output Node]
-    B2 --> C
-    B3 --> C
-    B4 --> C
+    X1[X1] --> H1[Hidden Node 1]
+    X1 --> H2[Hidden Node 2]
+    X1 --> H3[Hidden Node 3]
+    X1 --> H4[Hidden Node 4]
+    X2[X2] --> H1
+    X2 --> H2
+    X2 --> H3
+    X2 --> H4
+    X3[X3] --> H1
+    X3 --> H2
+    X3 --> H3
+    X3 --> H4
+    H1 --> O[Output Node]
+    H2 --> O
+    H3 --> O
+    H4 --> O
+```
+### How do we identify neural network equations? 
+
+
 
 
 
