@@ -39,5 +39,8 @@ graph LR
 ```
 ### How do we identify neural network equations? 
 
+I used draw.io (which is pretty cool and this is my first time doing this). 
+
+<img width="800" alt="{DB31F52F-BFA5-47B3-9CE7-05D9890B0737}" src="https://github.com/user-attachments/assets/f0c49f2d-18cf-468f-a4d3-11bb851c97f0" />
 
 
