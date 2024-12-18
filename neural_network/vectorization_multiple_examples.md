@@ -1,4 +1,4 @@
-# What is vectorization and why it is important for multiple examples in a neural network? 
+# Vectorization for Multiple Examples
 
 Based on my understanding, it helps optimize computations while handling multiple training examples. I guess that before vectorization (recall I provided some real life analogies on how much vectorization matters for machine learning - under the basics folder). At first, the neural network processes one example x(i) at a time using loops such as from i = 1 to m, where m is the number of training examples. 
 
