@@ -88,3 +88,6 @@ Data Preprocessing Code:
 
 Model Training Code: 
 [model_training_workout.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/model_training_workout.py)
+
+Main Code:
+[main_workout.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/main_workout.py)
