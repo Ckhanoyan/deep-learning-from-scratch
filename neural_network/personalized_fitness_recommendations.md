@@ -54,3 +54,21 @@ Above is the 3 x 5 matrix. Thus, the formula - X ∈R n x m - represents a matri
 
 For this recommendation system here, the formula defines a dataset where each row corresponds to an user, and each column corresponds to a specific feature.
 
+### Define output labels for this system 
+
+We want to have the output defined, and I probably should call it the "recommended workout type", which is categorical. Here are the five categories I can think of, and we may need to one-hot encode these labels into Y. One-hot encoding is a method to represent cateogrical data in a binary format, which means that each cagtegory is transformed into a vector of zeros with a single 1 indicating the presence of that category. 
+* Cardio
+* Strength training
+* HIIT
+* Yoga
+* Flexibility
+
+This is an example of transforming the categorical variables into binary variables: 
+
+        [1, 0, 0, 0, 0] #cardio
+        [0, 1, 0, 0, 0] #strength training 
+        [0, 0, 1, 0, 0] #HIIT
+        [0, 0, 0, 1, 0] #yoga 
+        [0, 0, 0, 0, 1] #flexibility 
+
+
