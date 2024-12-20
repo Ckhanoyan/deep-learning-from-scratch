@@ -99,13 +99,13 @@ Code in Python
     # Forward propagation
     Z = np.dot(W, X) + b  # Linear combination
 
-# Softmax activation function
-def softmax(Z):
-    exp_Z = np.exp(Z - np.max(Z, axis=0))  # Numerical stability
-    return exp_Z / np.sum(exp_Z, axis=0)
+    # Softmax activation function
+    def softmax(Z):
+        exp_Z = np.exp(Z - np.max(Z, axis=0))  # Numerical stability
+        return exp_Z / np.sum(exp_Z, axis=0)
 
-A = softmax(Z)  # Predicted probabilities for 5 workout types
+    A = softmax(Z)  # Predicted probabilities for 5 workout types
 
-print("Shape of predicted probabilities:", A.shape)
-print("Example probabilities for first user:", A[:, 0])
+    print("Shape of predicted probabilities:", A.shape)
+    print("Example probabilities for first user:", A[:, 0])
 
