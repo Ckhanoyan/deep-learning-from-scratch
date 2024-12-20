@@ -71,4 +71,16 @@ This is an example of transforming the categorical variables into binary variabl
         [0, 0, 0, 1, 0] #yoga 
         [0, 0, 0, 0, 1] #flexibility 
 
+This is how you one-hot encode the labels into Y, where Y ∈R ↑ (5 x m) for 5 workout types.
+
+### Implement Forward Propagation 
+
+The forward pass will compute predictions for all users using vectorization. Here's the linear combination:
+
+Z = W↑[1] X + b↑[1]
+* Where W↑[1] is the weight matrix
+* Where b↑[1] is the bias term
+
+The next step will be utilize softmax activiation (A = softmax(Z)) that will then convert raw scores into probabilities that sum to 1. 
+
 
