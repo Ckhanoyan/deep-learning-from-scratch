@@ -48,4 +48,9 @@ User 1 is 25 years old (25% of the normalized range of 0-100, weighs 60% (or 60 
     print("Input Matrix X:")
     print(X)
 
+Above is the 3 x 5 matrix. Thus, the formula - X ∈R n x m - represents a matrix X that belongs to the space of real numbers (R) and has dimensions of n x m, where: 
+* n is the number of rows, e.g., the number of users
+* m is the number of columns, e.g., features, attributes, etc.
+
+For this recommendation system here, the formula defines a dataset where each row corresponds to an user, and each column corresponds to a specific feature.
 
