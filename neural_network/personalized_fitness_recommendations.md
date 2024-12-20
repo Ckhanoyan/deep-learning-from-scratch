@@ -83,4 +83,8 @@ Z = np.dot(W, X) + b
 
 The next step will be utilize softmax activiation (A = softmax(Z)) that will then convert raw scores into probabilities that sum to 1. 
 
+Data Preprocessing Code: 
 [data_preprocessing_workout.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/data_preprocessing_workout.py)
+
+Model Training Code: 
+[model_training_workout.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/model_training_workout.py)
