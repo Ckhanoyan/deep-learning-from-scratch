@@ -42,6 +42,6 @@ I will start doing some small neural networks using libraries such as NumPy and 
 See my code practice link here: 
 [vectorization_multipleexamples.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/vectorization_multipleexamples.py)
 
-
-
+### Learning Resources
+* https://www.coursera.org/learn/machine-learning
 
