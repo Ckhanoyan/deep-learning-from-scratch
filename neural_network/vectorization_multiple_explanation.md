@@ -37,3 +37,11 @@ For Layer 1, we combine all m examples into a single matrix X.
 I am not 100% confident understanding the whole process, but I think I understand the concept. As long as I understand the flow from input to weighted sum to activation to repeat, I think that is important to know. In addition, vectorization is critical for scaling neural networks to large datasets where there may be so many examples.
 
 I will start doing some small neural networks using libraries such as NumPy and maybe some code examples.
+
+### Python Implementation Step by Step
+See my code practice link here: 
+[vectorization_multipleexamples.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/vectorization_multipleexamples.py)
+
+
+
+
