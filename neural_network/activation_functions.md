@@ -15,3 +15,16 @@ I did not realize there were some activation functions we could choose based on 
 
 <img width="500" alt="{3A4E0F7B-FC33-4E19-AF24-BD5ECF3455FF}" src="https://github.com/user-attachments/assets/22b9677d-1977-4c56-93f4-f5ec5962d966" />
 
+### ReLU (Rectified Linear Unit) activation function 
+* ReLU activiation function, a = max(0, z), where it introduces non-linearity and avoids the vanishing gradient problem by having gradients of either 0 or 1 for positive inputs.
+* Use case: most commonly used in hidden layers of deep neural networks due to its computional efficiency and effectiveness in training.. However, it can lead to "dead neurons" if many outputs are zero or negative. 
+* Real world example: It seems more popular in modern neural networks... It can be used in healthcare where it can predict disease diagnoses from medical images, e.g., identifying tumors in X-rays or MRIs. For gaming, it can be used to train AI agents in video games to make real-time decisions like reinforcement learning in chess games, and it supports deep neural networks by enabling faster training, etc.
+
+<img width="500" alt="{FD875301-4E36-4E29-AF89-06A274934087}" src="https://github.com/user-attachments/assets/64987436-a37e-4a16-b7b5-8b3bb817fa4b" />
+
+### Leaky ReLU activation function
+* Leaky ReLU activation function, a = max(0.01z, z), where it addresses the "dead" neuron issue in standard ReLU by allowing a small, non-zero gradient for negative inputs.
+* Use case: used in deep neural networks where ReLU fails due to dead neurons
+* Real world example: again, we are talking about healthcare, it can be used to analyze medical data to detect conditions such as diabetes, heart disease, or cancer. Why? Medical datasets may contain features with negative values such as deviations in lab results. Leaky ReLU can ensure that all data can contribute to the model. Also, for weather forecasting, weather data can have negative values such as temperature dropping below zero.
+
+<img width="500" alt="{F8F034AC-EB1E-4C81-9DDD-132414BE3A12}" src="https://github.com/user-attachments/assets/05cde939-c116-4c6f-b704-f1c004069e03" />
