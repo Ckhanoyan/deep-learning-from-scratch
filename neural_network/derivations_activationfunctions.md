@@ -4,7 +4,7 @@ This derivation involves computing the derivaties of the activation functions g(
 
 ## Derivation of Sigmoid Function 
 
-Remember that the sigmoid function is g(z) = 1 / (1 + e(-z)), and it provides any values between 0 and 1, making it useful for probabilities in classification problems. The goal is to compute the derivative g'(z), which represents how sensitive g(z) is to changes in z.
+Remember the sigmoid function, and it provides any values between 0 and 1, making it useful for probabilities in classification problems. The goal is to compute the derivative g'(z), which represents how sensitive g(z) is to changes in z.
 
 1. Set up the derivate:
    
