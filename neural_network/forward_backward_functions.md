@@ -18,3 +18,5 @@ This is when the network learns by adjusting its weights and biases to reduce er
 * Output: Gradients dW[l], db[l], dA[l-1] to adjust the layer and inform the previous layer. 
 
 <img width="700" alt="{D86D6414-C2B0-47C1-A1B2-7238045295FF}" src="https://github.com/user-attachments/assets/c8003888-5189-4cf2-b22e-8e2697df241c" />
+
+<img width="700" alt="{8670923F-C11E-4D98-A0CB-379E1501328C}" src="https://github.com/user-attachments/assets/80e45a4e-e844-4d99-b693-3bab0c101db2" />
