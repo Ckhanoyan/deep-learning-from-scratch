@@ -11,3 +11,13 @@ The Frobenius norm is an extension of the L2 norm to matrices and is often used 
 * λ is the regularization parameter that controls the trade-off between the original loss and the penalty term
 
 When we apply Frobenius norm regularization, this means we will add it, λ∥W∥ 2 f, to the total loss. 
+
+### Scenario
+
+If you are building a deeep learning model to classify handwritten digits, the neural network has several layers with weight matrices that transform the input into meaningful features for classification. Without regularization, the model might overfit the training data, learning noise and patterns instead of true underlying features of handwritten digits. 
+* We apply Frobenius norm regularization to this scenario. 
+* Each weight matrix W in the model represents the relationships between neurons in adacent layers.
+* If some weights in W become excessively large, it can indicate over-reliance on specific neurons or features, reducing the model's ability to generalize.
+* By adding a regularization term λ to the loss function, you penalize the model for large weights, encouraging it to distribute its reliance more evenly across neurons.
+* It will ensure weights remain small and smooth.
+* With this regularization, the model can avoid overfitting and perform better on unseen data as it can generalize the patterns of handwritten digits instead of memorizing ones. 
