@@ -21,3 +21,19 @@ If you are building a deeep learning model to classify handwritten digits, the n
 * By adding a regularization term λ to the loss function, you penalize the model for large weights, encouraging it to distribute its reliance more evenly across neurons.
 * It will ensure weights remain small and smooth.
 * With this regularization, the model can avoid overfitting and perform better on unseen data as it can generalize the patterns of handwritten digits instead of memorizing ones. 
+
+### But How Does Regularization Help Reduce Overfitting?
+
+L2 Regularization seems to be one of the most popular methods in deep learning models, and it adds penalties to the model's complexity such as the size of its weights. So, it penalizes large weights, preventing any single feature from dominating the model. The loss function with L2 regularization looks like this below:
+
+    ### L2 Regularization
+
+    L2 regularization, also known as weight decay, adds a penalty term to the loss function to prevent overfitting. The L2 regularization term is defined as the sum of the squares of the weights:
+
+    \[ L_{\text{total}} = L + \frac{\lambda}{2} \sum_{i} W_{i}^2 \]
+
+    where:
+    - \( L_{\text{total}} \) is the total loss with regularization,
+    - \( L \) is the original loss function,
+    - \( \lambda \) (lambda) is the regularization parameter,
+    - \( W_{i} \) are the weights of the neural network.
