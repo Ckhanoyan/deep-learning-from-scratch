@@ -37,3 +37,9 @@ L2 Regularization seems to be one of the most popular methods in deep learning m
     - \( L \) is the original loss function,
     - \( \lambda \) (lambda) is the regularization parameter,
     - \( W_{i} \) are the weights of the neural network.
+
+With the L2 regularization, it encourages simpler models that will then generalize better. Instead, all features will contribute more evenly by applying the penalty term that will force the weights to shrink.
+
+### Conclusion 
+
+With L2 Regularization, it will produce a smooth curve that approximates the true function instead of resulting in a wiggly curve. 
