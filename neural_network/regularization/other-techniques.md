@@ -20,4 +20,5 @@ To do this, you can use TensorFlow to support early stopping.
     from tensorflow.keras.callbacks import EarlyStopping 
     early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
-Here's the code example I just set up. 
+Here's the code example I just set up:
+[other-techniques.py](https://github.com/Ckhanoyan/deep-learning-from-scratch/blob/main/scripts/regularization/other-techniques.py)
