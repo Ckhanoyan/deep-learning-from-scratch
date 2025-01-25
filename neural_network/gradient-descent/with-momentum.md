@@ -12,6 +12,6 @@ For this situation, without momentum, the updates to the parameters may zig-zag,
 
 This momentum helps speed up convergence and smoothens the optimization path and helps overcome zig-zags in the update. This code just demonstrates the basics of gradient descent with momentum applied to a simple cost function, however, it can be used in more complex machine learning tasks. 
 
-Here's the snapshot of the code I did (see the actual code implementation: neural_network/gradient-descent/with-momentum-code.py
+Here's the snapshot of the code I did (see the actual code implementation: neural_network/gradient-descent/with-momentum-code.py)
 
 <img width="800" alt="{7BED364E-C5F1-4E4B-9CC2-10309A67D631}" src="https://github.com/user-attachments/assets/2ceb6bcd-4471-4611-8fd9-7a6598f63d60" />
